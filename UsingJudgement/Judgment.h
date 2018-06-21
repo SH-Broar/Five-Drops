@@ -22,7 +22,7 @@ using namespace std;
 #define VirtualMapMax 28
 #define VirtualMapMin 10
 
-#define Timeout 500
+#define Timeout 500000
 /*
 	오목 판은 0~ 17 사이의 숫자를 이용한다.
 
