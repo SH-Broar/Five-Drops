@@ -443,25 +443,25 @@ int isExitedStone_2017180021(int x, int y)
 			// 가로체크. 
 			if (x > 4 && x < 14)
 			{
-				if ((tmptable[x - 5][y] == 0 && tmptable[x - 4][y] == 2 && tmptable[x - 3][y] == 2 && tmptable[x - 2][y] == 2 && tmptable[x - 1][y] == 0 && tmptable[x + 1][y] == 0) ||
-					(tmptable[x - 5][y] == 0 && tmptable[x - 4][y] == 2 && tmptable[x - 3][y] == 2 && tmptable[x - 2][y] == 0 && tmptable[x - 1][y] == 2 && tmptable[x + 1][y] == 0) ||
-					(tmptable[x - 5][y] == 0 && tmptable[x - 4][y] == 2 && tmptable[x - 3][y] == 0 && tmptable[x - 2][y] == 2 && tmptable[x - 1][y] == 2 && tmptable[x + 1][y] == 0) ||
-					(tmptable[x - 4][y] == 0 && tmptable[x - 3][y] == 2 && tmptable[x - 2][y] == 2 && tmptable[x - 1][y] == 2 && tmptable[x + 1][y] == 0) ||
+				if ((tmptable[x - 4][y] == 2 && tmptable[x - 3][y] == 2 && tmptable[x - 2][y] == 2 && tmptable[x - 1][y] == 0) ||
+					(tmptable[x - 4][y] == 2 && tmptable[x - 3][y] == 2 && tmptable[x - 2][y] == 0 && tmptable[x - 1][y] == 2) ||
+					(tmptable[x - 4][y] == 2 && tmptable[x - 3][y] == 0 && tmptable[x - 2][y] == 2 && tmptable[x - 1][y] == 2) ||
+					(tmptable[x - 3][y] == 2 && tmptable[x - 2][y] == 2 && tmptable[x - 1][y] == 2) ||
 
-					(tmptable[x + 5][y] == 0 && tmptable[x + 4][y] == 2 && tmptable[x + 3][y] == 2 && tmptable[x + 2][y] == 2 && tmptable[x + 1][y] == 0 && tmptable[x - 1][y] == 0) ||
-					(tmptable[x + 5][y] == 0 && tmptable[x + 4][y] == 2 && tmptable[x + 3][y] == 2 && tmptable[x + 2][y] == 0 && tmptable[x + 1][y] == 2 && tmptable[x - 1][y] == 0) ||
-					(tmptable[x + 5][y] == 0 && tmptable[x + 4][y] == 2 && tmptable[x + 3][y] == 0 && tmptable[x + 2][y] == 2 && tmptable[x + 1][y] == 2 && tmptable[x - 1][y] == 0) ||
-					(tmptable[x + 4][y] == 0 && tmptable[x + 3][y] == 2 && tmptable[x + 2][y] == 2 && tmptable[x + 1][y] == 2 && tmptable[x - 1][y] == 0) ||
+					(tmptable[x + 4][y] == 2 && tmptable[x + 3][y] == 2 && tmptable[x + 2][y] == 2 && tmptable[x + 1][y] == 0 ) ||
+					(tmptable[x + 4][y] == 2 && tmptable[x + 3][y] == 2 && tmptable[x + 2][y] == 0 && tmptable[x + 1][y] == 2 ) ||
+					(tmptable[x + 4][y] == 2 && tmptable[x + 3][y] == 0 && tmptable[x + 2][y] == 2 && tmptable[x + 1][y] == 2 ) ||
+					(tmptable[x + 3][y] == 2 && tmptable[x + 2][y] == 2 && tmptable[x + 1][y] == 2 ) ||
 
-					(tmptable[x - 4][y] == 0 && tmptable[x - 3][y] == 2 && tmptable[x - 2][y] == 2 && tmptable[x - 1][y] == 0 && tmptable[x + 1][y] == 2 && tmptable[x + 2][y] == 0) ||
-					(tmptable[x - 4][y] == 0 && tmptable[x - 3][y] == 2 && tmptable[x - 2][y] == 0 && tmptable[x - 1][y] == 2 && tmptable[x + 1][y] == 2 && tmptable[x + 2][y] == 0) ||
-					(tmptable[x - 3][y] == 0 && tmptable[x - 2][y] == 2 && tmptable[x - 1][y] == 2 && tmptable[x + 1][y] == 2 && tmptable[x + 2][y] == 0) ||
-					(tmptable[x - 3][y] == 0 && tmptable[x - 2][y] == 2 && tmptable[x - 1][y] == 2 && tmptable[x + 1][y] == 0 && tmptable[x + 2][y] == 2 && tmptable[x + 3][y] == 0) ||
+					(tmptable[x - 3][y] == 2 && tmptable[x - 2][y] == 2 && tmptable[x - 1][y] == 0 && tmptable[x + 1][y] == 2  ) ||
+					(tmptable[x - 3][y] == 2 && tmptable[x - 2][y] == 0 && tmptable[x - 1][y] == 2 && tmptable[x + 1][y] == 2  ) ||
+					(tmptable[x - 2][y] == 2 && tmptable[x - 1][y] == 2 && tmptable[x + 1][y] == 2 ) ||
+					(tmptable[x - 2][y] == 2 && tmptable[x - 1][y] == 2 && tmptable[x + 1][y] == 0 && tmptable[x + 2][y] == 2 ) ||
 
-					(tmptable[x + 4][y] == 0 && tmptable[x + 3][y] == 2 && tmptable[x + 2][y] == 2 && tmptable[x + 1][y] == 0 && tmptable[x - 1][y] == 2 && tmptable[x - 2][y] == 0) ||
-					(tmptable[x + 4][y] == 0 && tmptable[x + 3][y] == 2 && tmptable[x + 2][y] == 0 && tmptable[x + 1][y] == 2 && tmptable[x - 1][y] == 2 && tmptable[x - 2][y] == 0) ||
-					(tmptable[x + 3][y] == 0 && tmptable[x + 2][y] == 2 && tmptable[x + 1][y] == 2 && tmptable[x - 1][y] == 2 && tmptable[x - 2][y] == 0) ||
-					(tmptable[x + 3][y] == 0 && tmptable[x + 2][y] == 2 && tmptable[x + 1][y] == 2 && tmptable[x - 1][y] == 0 && tmptable[x - 2][y] == 2 && tmptable[x - 3][y] == 0))
+					(tmptable[x + 3][y] == 2 && tmptable[x + 2][y] == 2 && tmptable[x + 1][y] == 0 && tmptable[x - 1][y] == 2 ) ||
+					(tmptable[x + 3][y] == 2 && tmptable[x + 2][y] == 0 && tmptable[x + 1][y] == 2 && tmptable[x - 1][y] == 2 ) ||
+					(tmptable[x + 2][y] == 2 && tmptable[x + 1][y] == 2 && tmptable[x - 1][y] == 2 ) ||
+					(tmptable[x + 2][y] == 2 && tmptable[x + 1][y] == 2 && tmptable[x - 1][y] == 0 && tmptable[x - 2][y] == 2 ))
 				{
 					//printf("%d %d G!", x, y);
 					//Sleep(1000);
@@ -471,25 +471,25 @@ int isExitedStone_2017180021(int x, int y)
 			// 세로체크. 
 			if (y > 4 && y < 14)
 			{
-				if ((tmptable[x][y - 5] == 0 && tmptable[x][y - 4] == 2 && tmptable[x][y - 3] == 2 && tmptable[x][y - 2] == 2 && tmptable[x][y - 1] == 0 && tmptable[x][y + 1] == 0) ||
-					(tmptable[x][y - 5] == 0 && tmptable[x][y - 4] == 2 && tmptable[x][y - 3] == 2 && tmptable[x][y - 2] == 0 && tmptable[x][y - 1] == 2 && tmptable[x][y + 1] == 0) ||
-					(tmptable[x][y - 5] == 0 && tmptable[x][y - 4] == 2 && tmptable[x][y - 3] == 0 && tmptable[x][y - 2] == 2 && tmptable[x][y - 1] == 2 && tmptable[x][y + 1] == 0) ||
-					(tmptable[x][y - 4] == 0 && tmptable[x][y - 3] == 2 && tmptable[x][y - 2] == 2 && tmptable[x][y - 1] == 2 && tmptable[x][y + 1] == 0) ||
+				if ((tmptable[x][y - 4] == 2 && tmptable[x][y - 3] == 2 && tmptable[x][y - 2] == 2 && tmptable[x][y - 1] == 0 ) ||
+					(tmptable[x][y - 4] == 2 && tmptable[x][y - 3] == 2 && tmptable[x][y - 2] == 0 && tmptable[x][y - 1] == 2)  ||
+					(tmptable[x][y - 4] == 2 && tmptable[x][y - 3] == 0 && tmptable[x][y - 2] == 2 && tmptable[x][y - 1] == 2)  ||
+					(tmptable[x][y - 3] == 2 && tmptable[x][y - 2] == 2 && tmptable[x][y - 1] == 2)  ||
 
-					(tmptable[x][y + 5] == 0 && tmptable[x][y + 4] == 2 && tmptable[x][y + 3] == 2 && tmptable[x][y + 2] == 2 && tmptable[x][y + 1] == 0 && tmptable[x][y - 1] == 0) ||
-					(tmptable[x][y + 5] == 0 && tmptable[x][y + 4] == 2 && tmptable[x][y + 3] == 2 && tmptable[x][y + 2] == 0 && tmptable[x][y + 1] == 2 && tmptable[x][y - 1] == 0) ||
-					(tmptable[x][y + 5] == 0 && tmptable[x][y + 4] == 2 && tmptable[x][y + 3] == 0 && tmptable[x][y + 2] == 2 && tmptable[x][y + 1] == 2 && tmptable[x][y - 1] == 0) ||
-					(tmptable[x][y + 4] == 0 && tmptable[x][y + 3] == 2 && tmptable[x][y + 2] == 2 && tmptable[x][y + 1] == 2 && tmptable[x][y - 1] == 0) ||
+					(tmptable[x][y + 4] == 2 && tmptable[x][y + 3] == 2 && tmptable[x][y + 2] == 2 && tmptable[x][y + 1] == 0)  ||
+					(tmptable[x][y + 4] == 2 && tmptable[x][y + 3] == 2 && tmptable[x][y + 2] == 0 && tmptable[x][y + 1] == 2)  ||
+					(tmptable[x][y + 4] == 2 && tmptable[x][y + 3] == 0 && tmptable[x][y + 2] == 2 && tmptable[x][y + 1] == 2)  ||
+					(tmptable[x][y + 3] == 2 && tmptable[x][y + 2] == 2 && tmptable[x][y + 1] == 2)  ||
 
-					(tmptable[x][y - 4] == 0 && tmptable[x][y - 3] == 2 && tmptable[x][y - 2] == 2 && tmptable[x][y - 1] == 0 && tmptable[x][y + 1] == 2 && tmptable[x][y + 2] == 0) ||
-					(tmptable[x][y - 4] == 0 && tmptable[x][y - 3] == 2 && tmptable[x][y - 2] == 0 && tmptable[x][y - 1] == 2 && tmptable[x][y + 1] == 2 && tmptable[x][y + 2] == 0) ||
-					(tmptable[x][y - 3] == 0 && tmptable[x][y - 2] == 2 && tmptable[x][y - 1] == 2 && tmptable[x][y + 1] == 2 && tmptable[x][y + 2] == 0) ||
-					(tmptable[x][y - 3] == 0 && tmptable[x][y - 2] == 2 && tmptable[x][y - 1] == 2 && tmptable[x][y + 1] == 0 && tmptable[x][y + 2] == 2 && tmptable[x][y + 3] == 0) ||
+					(tmptable[x][y - 3] == 2 && tmptable[x][y - 2] == 2 && tmptable[x][y - 1] == 0 && tmptable[x][y + 1] == 2)  ||
+					(tmptable[x][y - 3] == 2 && tmptable[x][y - 2] == 0 && tmptable[x][y - 1] == 2 && tmptable[x][y + 1] == 2)  ||
+					(tmptable[x][y - 2] == 2 && tmptable[x][y - 1] == 2 && tmptable[x][y + 1] == 2 ) ||
+					(tmptable[x][y - 2] == 2 && tmptable[x][y - 1] == 2 && tmptable[x][y + 1] == 0 && tmptable[x][y + 2] == 2)  ||
 
-					(tmptable[x][y + 4] == 0 && tmptable[x][y + 3] == 2 && tmptable[x][y + 2] == 2 && tmptable[x][y + 1] == 0 && tmptable[x][y - 1] == 2 && tmptable[x][y - 2] == 0) ||
-					(tmptable[x][y + 4] == 0 && tmptable[x][y + 3] == 2 && tmptable[x][y + 2] == 0 && tmptable[x][y + 1] == 2 && tmptable[x][y - 1] == 2 && tmptable[x][y - 2] == 0) ||
-					(tmptable[x][y + 3] == 0 && tmptable[x][y + 2] == 2 && tmptable[x][y + 1] == 2 && tmptable[x][y - 1] == 2 && tmptable[x][y - 2] == 0) ||
-					(tmptable[x][y + 3] == 0 && tmptable[x][y + 2] == 2 && tmptable[x][y + 1] == 2 && tmptable[x][y - 1] == 0 && tmptable[x][y - 2] == 2 && tmptable[x][y - 3] == 0))
+					(tmptable[x][y + 3] == 2 && tmptable[x][y + 2] == 2 && tmptable[x][y + 1] == 0 && tmptable[x][y - 1] == 2)  ||
+					(tmptable[x][y + 3] == 2 && tmptable[x][y + 2] == 0 && tmptable[x][y + 1] == 2 && tmptable[x][y - 1] == 2)  ||
+					(tmptable[x][y + 2] == 2 && tmptable[x][y + 1] == 2 && tmptable[x][y - 1] == 2)  ||
+					(tmptable[x][y + 2] == 2 && tmptable[x][y + 1] == 2 && tmptable[x][y - 1] == 0 && tmptable[x][y - 2] == 2 ))
 				{
 					//printf("%d %d S!", x, y);
 					//Sleep(1000);
@@ -499,25 +499,25 @@ int isExitedStone_2017180021(int x, int y)
 			// 대각선체크. 
 			if (x > 4 && x < 14 && y > 4 && y < 14)
 			{
-				if ((tmptable[x - 5][y - 5] == 0 && tmptable[x - 4][y - 4] == 2 && tmptable[x - 3][y - 3] == 2 && tmptable[x - 2][y - 2] == 2 && tmptable[x - 1][y - 1] == 0 && tmptable[x + 1][y + 1] == 0) ||
-					(tmptable[x - 5][y - 5] == 0 && tmptable[x - 4][y - 4] == 2 && tmptable[x - 3][y - 3] == 2 && tmptable[x - 2][y - 2] == 0 && tmptable[x - 1][y - 1] == 2 && tmptable[x + 1][y + 1] == 0) ||
-					(tmptable[x - 5][y - 5] == 0 && tmptable[x - 4][y - 4] == 2 && tmptable[x - 3][y - 3] == 0 && tmptable[x - 2][y - 2] == 2 && tmptable[x - 1][y - 1] == 2 && tmptable[x + 1][y + 1] == 0) ||
-					(tmptable[x - 4][y - 4] == 0 && tmptable[x - 3][y - 3] == 2 && tmptable[x - 2][y - 2] == 2 && tmptable[x - 1][y - 1] == 2 && tmptable[x + 1][y + 1] == 0) ||
+				if ((tmptable[x - 4][y - 4] == 2 && tmptable[x - 3][y - 3] == 2 && tmptable[x - 2][y - 2] == 2 && tmptable[x - 1][y - 1] == 0 ) ||
+					(tmptable[x - 4][y - 4] == 2 && tmptable[x - 3][y - 3] == 2 && tmptable[x - 2][y - 2] == 0 && tmptable[x - 1][y - 1] == 2 ) ||
+					(tmptable[x - 4][y - 4] == 2 && tmptable[x - 3][y - 3] == 0 && tmptable[x - 2][y - 2] == 2 && tmptable[x - 1][y - 1] == 2 ) ||
+					(tmptable[x - 3][y - 3] == 2 && tmptable[x - 2][y - 2] == 2 && tmptable[x - 1][y - 1] == 2) ||
 
-					(tmptable[x + 5][y + 5] == 0 && tmptable[x + 4][y + 4] == 2 && tmptable[x + 3][y + 3] == 2 && tmptable[x + 2][y + 2] == 2 && tmptable[x + 1][y + 1] == 0 && tmptable[x - 1][y - 1] == 0) ||
-					(tmptable[x + 5][y + 5] == 0 && tmptable[x + 4][y + 4] == 2 && tmptable[x + 3][y + 3] == 2 && tmptable[x + 2][y + 2] == 0 && tmptable[x + 1][y + 1] == 2 && tmptable[x - 1][y - 1] == 0) ||
-					(tmptable[x + 5][y + 5] == 0 && tmptable[x + 4][y + 4] == 2 && tmptable[x + 3][y + 3] == 0 && tmptable[x + 2][y + 2] == 2 && tmptable[x + 1][y + 1] == 2 && tmptable[x - 1][y - 1] == 0) ||
-					(tmptable[x + 4][y + 4] == 0 && tmptable[x + 3][y + 3] == 2 && tmptable[x + 2][y + 2] == 2 && tmptable[x + 1][y + 1] == 2 && tmptable[x - 1][y - 1] == 0) ||
+					(tmptable[x + 4][y + 4] == 2 && tmptable[x + 3][y + 3] == 2 && tmptable[x + 2][y + 2] == 2 && tmptable[x + 1][y + 1] == 0 ) ||
+					(tmptable[x + 4][y + 4] == 2 && tmptable[x + 3][y + 3] == 2 && tmptable[x + 2][y + 2] == 0 && tmptable[x + 1][y + 1] == 2 ) ||
+					(tmptable[x + 4][y + 4] == 2 && tmptable[x + 3][y + 3] == 0 && tmptable[x + 2][y + 2] == 2 && tmptable[x + 1][y + 1] == 2 ) ||
+					(tmptable[x + 3][y + 3] == 2 && tmptable[x + 2][y + 2] == 2 && tmptable[x + 1][y + 1] == 2) ||
 
-					(tmptable[x - 4][y - 4] == 0 && tmptable[x - 3][y - 3] == 2 && tmptable[x - 2][y - 2] == 2 && tmptable[x - 1][y - 1] == 0 && tmptable[x + 1][y + 1] == 2 && tmptable[x + 2][y + 2] == 0) ||
-					(tmptable[x - 4][y - 4] == 0 && tmptable[x - 3][y - 3] == 2 && tmptable[x - 2][y - 2] == 0 && tmptable[x - 1][y - 1] == 2 && tmptable[x + 1][y + 1] == 2 && tmptable[x + 2][y + 2] == 0) ||
-					(tmptable[x - 3][y - 3] == 0 && tmptable[x - 2][y - 2] == 2 && tmptable[x - 1][y - 1] == 2 && tmptable[x + 1][y + 1] == 2 && tmptable[x + 2][y + 2] == 0) ||
-					(tmptable[x - 3][y - 3] == 0 && tmptable[x - 2][y - 2] == 2 && tmptable[x - 1][y - 1] == 2 && tmptable[x + 1][y + 1] == 0 && tmptable[x + 2][y + 2] == 2 && tmptable[x + 3][y + 3] == 0) ||
+					(tmptable[x - 3][y - 3] == 2 && tmptable[x - 2][y - 2] == 2 && tmptable[x - 1][y - 1] == 0 && tmptable[x + 1][y + 1] == 2 ) ||
+					(tmptable[x - 3][y - 3] == 2 && tmptable[x - 2][y - 2] == 0 && tmptable[x - 1][y - 1] == 2 && tmptable[x + 1][y + 1] == 2 ) ||
+					(tmptable[x - 2][y - 2] == 2 && tmptable[x - 1][y - 1] == 2 && tmptable[x + 1][y + 1] == 2 ) ||
+					(tmptable[x - 2][y - 2] == 2 && tmptable[x - 1][y - 1] == 2 && tmptable[x + 1][y + 1] == 0 && tmptable[x + 2][y + 2] == 2 ) ||
 
-					(tmptable[x + 4][y + 4] == 0 && tmptable[x + 3][y + 3] == 2 && tmptable[x + 2][y + 2] == 2 && tmptable[x + 1][y + 1] == 0 && tmptable[x - 1][y - 1] == 2 && tmptable[x - 2][y - 2] == 0) ||
-					(tmptable[x + 4][y + 4] == 0 && tmptable[x + 3][y + 3] == 2 && tmptable[x + 2][y + 2] == 0 && tmptable[x + 1][y + 1] == 2 && tmptable[x - 1][y - 1] == 2 && tmptable[x - 2][y - 2] == 0) ||
-					(tmptable[x + 3][y + 3] == 0 && tmptable[x + 2][y + 2] == 2 && tmptable[x + 1][y + 1] == 2 && tmptable[x - 1][y - 1] == 2 && tmptable[x - 2][y - 2] == 0) ||
-					(tmptable[x + 3][y + 3] == 0 && tmptable[x + 2][y + 2] == 2 && tmptable[x + 1][y + 1] == 2 && tmptable[x - 1][y - 1] == 0 && tmptable[x - 2][y - 2] == 2 && tmptable[x - 3][y - 3] == 0))
+					(tmptable[x + 3][y + 3] == 2 && tmptable[x + 2][y + 2] == 2 && tmptable[x + 1][y + 1] == 0 && tmptable[x - 1][y - 1] == 2 ) ||
+					(tmptable[x + 3][y + 3] == 2 && tmptable[x + 2][y + 2] == 0 && tmptable[x + 1][y + 1] == 2 && tmptable[x - 1][y - 1] == 2 ) ||
+					(tmptable[x + 2][y + 2] == 2 && tmptable[x + 1][y + 1] == 2 && tmptable[x - 1][y - 1] == 2) ||
+					(tmptable[x + 2][y + 2] == 2 && tmptable[x + 1][y + 1] == 2 && tmptable[x - 1][y - 1] == 0 && tmptable[x - 2][y - 2] == 2 ))
 				{
 					//printf("%d %d D!", x, y);
 					//Sleep(1000);
@@ -527,25 +527,25 @@ int isExitedStone_2017180021(int x, int y)
 			// 반대 대각선	   체크. 
 			if (x > 4 && x < 14 && y > 4 && y < 14)
 			{
-				if ((tmptable[x + 5][y - 5] == 0 && tmptable[x + 4][y - 4] == 2 && tmptable[x + 3][y - 3] == 2 && tmptable[x + 2][y - 2] == 2 && tmptable[x + 1][y - 1] == 0 && tmptable[x - 1][y + 1] == 0) ||
-					(tmptable[x + 5][y - 5] == 0 && tmptable[x + 4][y - 4] == 2 && tmptable[x + 3][y - 3] == 2 && tmptable[x + 2][y - 2] == 0 && tmptable[x + 1][y - 1] == 2 && tmptable[x - 1][y + 1] == 0) ||
-					(tmptable[x + 5][y - 5] == 0 && tmptable[x + 4][y - 4] == 2 && tmptable[x + 3][y - 3] == 0 && tmptable[x + 2][y - 2] == 2 && tmptable[x + 1][y - 1] == 2 && tmptable[x - 1][y + 1] == 0) ||
-					(tmptable[x + 4][y - 4] == 0 && tmptable[x + 3][y - 3] == 2 && tmptable[x + 2][y - 2] == 2 && tmptable[x + 1][y - 1] == 2 && tmptable[x - 1][y + 1] == 0) ||
-
-					(tmptable[x - 5][y + 5] == 0 && tmptable[x - 4][y + 4] == 2 && tmptable[x - 3][y + 3] == 2 && tmptable[x - 2][y + 2] == 2 && tmptable[x - 1][y + 1] == 0 && tmptable[x + 1][y - 1] == 0) ||
-					(tmptable[x - 5][y + 5] == 0 && tmptable[x - 4][y + 4] == 2 && tmptable[x - 3][y + 3] == 2 && tmptable[x - 2][y + 2] == 0 && tmptable[x - 1][y + 1] == 2 && tmptable[x + 1][y - 1] == 0) ||
-					(tmptable[x - 5][y + 5] == 0 && tmptable[x - 4][y + 4] == 2 && tmptable[x - 3][y + 3] == 0 && tmptable[x - 2][y + 2] == 2 && tmptable[x - 1][y + 1] == 2 && tmptable[x + 1][y - 1] == 0) ||
-					(tmptable[x - 4][y + 4] == 0 && tmptable[x - 3][y + 3] == 2 && tmptable[x - 2][y + 2] == 2 && tmptable[x - 1][y + 1] == 2 && tmptable[x + 1][y - 1] == 0) ||
-
-					(tmptable[x + 4][y - 4] == 0 && tmptable[x + 3][y - 3] == 2 && tmptable[x + 2][y - 2] == 2 && tmptable[x + 1][y - 1] == 0 && tmptable[x - 1][y + 1] == 2 && tmptable[x - 2][y + 2] == 0) ||
-					(tmptable[x + 4][y - 4] == 0 && tmptable[x + 3][y - 3] == 2 && tmptable[x + 2][y - 2] == 0 && tmptable[x + 1][y - 1] == 2 && tmptable[x - 1][y + 1] == 2 && tmptable[x - 2][y + 2] == 0) ||
-					(tmptable[x + 3][y - 3] == 0 && tmptable[x + 2][y - 2] == 2 && tmptable[x + 1][y - 1] == 2 && tmptable[x - 1][y + 1] == 2 && tmptable[x - 2][y + 2] == 0) ||
-					(tmptable[x + 3][y - 3] == 0 && tmptable[x + 2][y - 2] == 2 && tmptable[x + 1][y - 1] == 2 && tmptable[x - 1][y + 1] == 0 && tmptable[x - 2][y + 2] == 2 && tmptable[x - 3][y + 3] == 0) ||
-
-					(tmptable[x - 4][y + 4] == 0 && tmptable[x - 3][y + 3] == 2 && tmptable[x - 2][y + 2] == 2 && tmptable[x - 1][y + 1] == 0 && tmptable[x + 1][y - 1] == 2 && tmptable[x + 2][y - 2] == 0) ||
-					(tmptable[x - 4][y + 4] == 0 && tmptable[x - 3][y + 3] == 2 && tmptable[x - 2][y + 2] == 0 && tmptable[x - 1][y + 1] == 2 && tmptable[x + 1][y - 1] == 2 && tmptable[x + 2][y - 2] == 0) ||
-					(tmptable[x - 3][y + 3] == 0 && tmptable[x - 2][y + 2] == 2 && tmptable[x - 1][y + 1] == 2 && tmptable[x + 1][y - 1] == 2 && tmptable[x + 2][y - 2] == 0) ||
-					(tmptable[x - 3][y + 3] == 0 && tmptable[x - 2][y + 2] == 2 && tmptable[x - 1][y + 1] == 2 && tmptable[x + 1][y - 1] == 0 && tmptable[x + 2][y - 2] == 2 && tmptable[x + 3][y - 3] == 0))
+				if ( (tmptable[x + 4][y - 4] == 2 && tmptable[x + 3][y - 3] == 2 && tmptable[x + 2][y - 2] == 2 && tmptable[x + 1][y - 1] == 0 ) ||
+					 (tmptable[x + 4][y - 4] == 2 && tmptable[x + 3][y - 3] == 2 && tmptable[x + 2][y - 2] == 0 && tmptable[x + 1][y - 1] == 2 ) ||
+					 (tmptable[x + 4][y - 4] == 2 && tmptable[x + 3][y - 3] == 0 && tmptable[x + 2][y - 2] == 2 && tmptable[x + 1][y - 1] == 2 ) ||
+					 (tmptable[x + 3][y - 3] == 2 && tmptable[x + 2][y - 2] == 2 && tmptable[x + 1][y - 1] == 2 ) ||
+					 
+					 (tmptable[x - 4][y + 4] == 2 && tmptable[x - 3][y + 3] == 2 && tmptable[x - 2][y + 2] == 2 && tmptable[x - 1][y + 1] == 0 ) ||
+					 (tmptable[x - 4][y + 4] == 2 && tmptable[x - 3][y + 3] == 2 && tmptable[x - 2][y + 2] == 0 && tmptable[x - 1][y + 1] == 2 ) ||
+					 (tmptable[x - 4][y + 4] == 2 && tmptable[x - 3][y + 3] == 0 && tmptable[x - 2][y + 2] == 2 && tmptable[x - 1][y + 1] == 2 ) ||
+					 (tmptable[x - 3][y + 3] == 2 && tmptable[x - 2][y + 2] == 2 && tmptable[x - 1][y + 1] == 2 ) ||
+					 
+					 (tmptable[x + 3][y - 3] == 2 && tmptable[x + 2][y - 2] == 2 && tmptable[x + 1][y - 1] == 0 && tmptable[x - 1][y + 1] == 2 ) ||
+					 (tmptable[x + 3][y - 3] == 2 && tmptable[x + 2][y - 2] == 0 && tmptable[x + 1][y - 1] == 2 && tmptable[x - 1][y + 1] == 2 ) ||
+					 (tmptable[x + 2][y - 2] == 2 && tmptable[x + 1][y - 1] == 2 && tmptable[x - 1][y + 1] == 2) ||
+					 (tmptable[x + 2][y - 2] == 2 && tmptable[x + 1][y - 1] == 2 && tmptable[x - 1][y + 1] == 0 && tmptable[x - 2][y + 2] == 2) ||
+					 
+					 (tmptable[x - 3][y + 3] == 2 && tmptable[x - 2][y + 2] == 2 && tmptable[x - 1][y + 1] == 0 && tmptable[x + 1][y - 1] == 2 ) ||
+					 (tmptable[x - 3][y + 3] == 2 && tmptable[x - 2][y + 2] == 0 && tmptable[x - 1][y + 1] == 2 && tmptable[x + 1][y - 1] == 2 ) ||
+					 (tmptable[x - 2][y + 2] == 2 && tmptable[x - 1][y + 1] == 2 && tmptable[x + 1][y - 1] == 2) ||
+					 (tmptable[x - 2][y + 2] == 2 && tmptable[x - 1][y + 1] == 2 && tmptable[x + 1][y - 1] == 0 && tmptable[x + 2][y - 2] == 2 ))
 				{
 					//printf("%d %d U!", x, y);
 					//Sleep(1000);
